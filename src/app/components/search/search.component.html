@@ -1,0 +1,20 @@
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input matInput type="text" placeholder="" formControlName="name" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Weight</mat-label>
+    <input matInput type="number" placeholder="" formControlName="weight" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Symbol</mat-label>
+    <input matInput type="text" placeholder="" formControlName="symbol" />
+  </mat-form-field>
+
+
+  <button mat-button type="submit">Submit</button>
+</form>

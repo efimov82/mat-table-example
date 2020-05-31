@@ -1,0 +1,7 @@
+<p>Awesome container</p>
+
+<app-search [searchParams]="filters" (search)="onSearch($event)"></app-search>
+
+<app-data-table [dataSource]="resultData"></app-data-table>
+
+<app-pagination (pageEvent)="onPageChange($event)"></app-pagination>
